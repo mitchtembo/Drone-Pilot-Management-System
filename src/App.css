@@ -1,0 +1,100 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center; /* This can remain for general alignment */
+  background-color: #ffffff; /* Change to a white background for a cleaner look */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f0f0f0; /* Light background for navbar */
+  margin-bottom: 2rem;
+}
+
+.navbar a, .navbar button {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.auth-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.auth-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #4CAF50; /* Green button color */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.dashboard, .pilot-management, .flight-log, .certifications, .scheduling {
+  text-align: center; /* Center text for better visual appeal */
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around; /* Adjusted for even spacing */
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background-color: #ffffff; /* Set a white background for contrast */
+  padding: 2rem; /* More padding for a modern look */
+  border-radius: 8px; /* Slightly more rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  flex: 1;
+  margin: 0 1rem; /* Adjusted margin for equal spacing */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition effects */
+}
+
+.stat-card:hover {
+  transform: translateY(-4px); /* Slight lift on hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.stat-card:last-child {
+  margin-right: 0; /* Ensure the last card does not have right margin */
+}
+
+.quick-links {
+  margin-bottom: 2rem;
+}
+
+.quick-links button {
+  margin-right: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2; /* Light background for table headers */
+}
+
+button {
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+}

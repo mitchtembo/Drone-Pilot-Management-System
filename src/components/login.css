@@ -1,0 +1,57 @@
+body {
+  background-image: url('https://images.pexels.com/photos/2100075/pexels-photo-2100075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Your background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* Ensure there is no margin around the body */
+}
+
+.auth-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Increased shadow for better separation */
+  position: relative; /* For absolute positioning of elements inside if needed */
+  z-index: 1; /* Ensure form is above the background */
+}
+
+.password-field {
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle {
+  margin-left: 0.5rem;
+  background: none;
+  border: none;
+  color: #007bff; /* Change color to match your theme */
+  cursor: pointer;
+}
+
+.error {
+  color: red; /* Error message styling */
+  margin-top: 0.5rem;
+}
+
+h2 {
+  text-align: center;
+  color: #333; /* Adjust for visibility against background */
+}
+
+button {
+  background-color: #4caf50; /* Green color for buttons */
+  color: white; /* Text color for buttons */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 0.5rem 1rem; /* Better padding */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker shade on hover */
+}

@@ -1,0 +1,79 @@
+:root {
+  --primary-color: #007bff; /* Bright blue for primary actions */
+  --secondary-color: #6c757d; /* Gray for secondary elements */
+  --accent-color: #f9ab23; /* Your icon color */
+  --background-color: #f8f9fa; /* Light background */
+  --text-color: #343a40; /* Dark text for contrast */
+  --card-background: #ffffff; /* White for cards */
+  --card-shadow: rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+  --border-radius: 8px; /* Standard border radius */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+button {
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: #fff; /* White text */
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+button:hover {
+  background-color: darken(var(--primary-color), 10%); /* Darken on hover */
+}
+
+.card {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px var(--card-shadow);
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: darken(var(--primary-color), 10%);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+}

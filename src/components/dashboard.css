@@ -1,0 +1,58 @@
+.dashboard {
+  padding: 20px;
+  background-color: #f4f7fa; /* Light background for the dashboard */
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Space between stats and quick links */
+}
+
+.stat-card {
+  background-color: #f0f0f0; /* Light gray color for cards */
+  color: #333333; /* Darker text for better readability */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+  transition: transform 0.3s, background-color 0.3s; /* Smooth transition on hover */
+}
+
+.stat-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  background-color: #e0e0e0; /* Slightly darker gray on hover for effect */
+}
+.stat-card h3 {
+  margin: 10px 0; /* Add margin for spacing */
+}
+
+.stat-card p {
+  font-size: 24px; /* Larger font for the count */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+.quick-links {
+  margin-top: 20px; /* Space above quick links */
+}
+
+.quick-links h3 {
+  margin-bottom: 10px; /* Space between title and buttons */
+}
+
+button {
+  background-color: #28a745; /* Green button color */
+  color: white; /* White text */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition on hover */
+  margin-right: 10px; /* Space between buttons */
+}
+
+button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
